@@ -29,7 +29,7 @@ def possible_bipartition(dislikes):
     painted_graph = {}
     current_color = 0
 
-    for node in range(len(dislikes)):
+    for node in dislikes.keys():
         neighbors = dislikes[node]
         if not painted_graph.get(node):
             painted_graph[node] = COLORS[current_color]
